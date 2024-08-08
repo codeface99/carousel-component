@@ -1,0 +1,46 @@
+.carousel-container {
+  position: relative;
+  width: 450px;
+  height: 300px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.3s;
+}
+
+.carousel-slide img {
+  width: 450px;
+  height: 300px;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 150px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  font-size: 30px;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+.carousel-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+}
